@@ -33,8 +33,30 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+//app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapRazorPages();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+    name : "Admin",
+    pattern : "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+    endpoints.MapControllerRoute(
+    name : "default",
+    pattern : "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+    app.MapRazorPages();
+});
+
+//Configure top level route registration for each controller and impliment this default MapRoute..
+
+/* app.UseMvc(routes =>
+{
+    routes.MapRoute(
+        name: "default",
+        template: "{controller=Home}/{action=Index}/{id?}");
+}); */
+
+
+
 
 app.Run();

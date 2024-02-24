@@ -1,0 +1,5 @@
+SELECT TOP (1000) [Id]
+      ,[Title]
+      ,[Description]
+      ,[ThumbnailImagePath]
+  FROM [WebsiteOne].[dbo].[Category]
