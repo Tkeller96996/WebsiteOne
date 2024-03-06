@@ -260,3 +260,4 @@ D:\Projects\WebsiteOne\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.
 D:\Projects\WebsiteOne\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\Projects\WebsiteOne\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Projects\WebsiteOne\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\Projects\WebsiteOne\obj\Debug\net8.0\WebsiteOne.sourcelink.json

@@ -36,6 +36,7 @@ app.UseRouting();
 //app.UseAuthentication();
 app.UseAuthorization();
 
+#pragma warning disable ASP0014 // Suggest using top level route registrations
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
@@ -46,6 +47,7 @@ app.UseEndpoints(endpoints =>
     pattern : "{area:exists}/{controller=Home}/{action=Index}/{id?}");
     app.MapRazorPages();
 });
+#pragma warning restore ASP0014 // Suggest using top level route registrations
 
 //Configure top level route registration for each controller and impliment this default MapRoute..
 
